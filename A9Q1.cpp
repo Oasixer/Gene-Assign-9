@@ -27,7 +27,7 @@ class Fraction{
 		}
 		
 		int getDen()const{
-			return numerator;
+			return denominator;
 		}
 		
 		void setNum(int num){
@@ -35,7 +35,7 @@ class Fraction{
 		}
 		
 		void setDen(int den){
-			if (!den)
+			if (den)
 				denominator=den;
 			else
 				cout << "Cannot divide by zero";
@@ -56,7 +56,7 @@ int main()
 	cout << "The default fraction is " << frac2.getNum()<<"/"<<frac2.getDen()<<endl;
 	frac2.setNum(1);
 	frac2.setDen(3);
-	if (frac1.isExactlySame(frac2))}{
+	if (frac1.isExactlySame(frac2)){
 		cout << frac1.getNum()<<"/"<<frac1.getDen()<<" = ";
 		cout << frac2.getNum()<<"/"<<frac2.getDen();
 	}
