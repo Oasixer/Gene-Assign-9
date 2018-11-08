@@ -25,7 +25,6 @@ dataAvg (int data1[NUMROW][NUMCOL], int data2[NUMROW][NUMCOL], int data3[NUMROW]
 			if (data3[d3Row][0]==data2[d2Row][0]&&data3[d3Row][1]==data2[d2Row][1]){
 				for (int d1Row=0; d1Row<NUMROW; d1Row++){
 					if (data2[d2Row][0]==data1[d1Row][0]&&data2[d2Row][1]==data1[d1Row][1]){
-						//cout << "match found" << endl;
 						avg[d3Row][0]=data3[d3Row][0];
 						avg[d3Row][1]=data3[d3Row][1];
 						avg[d3Row][2]=((double)data3[d3Row][2]+data2[d2Row][2]+data1[d1Row][2])/3;
@@ -34,8 +33,6 @@ dataAvg (int data1[NUMROW][NUMCOL], int data2[NUMROW][NUMCOL], int data3[NUMROW]
 							best[1]=avg[d3Row][1];
 							best[2]=avg[d3Row][2];
 						}
-						//cout << data1[d1Row][0] <<" "<< data1[d1Row][1] << data2[d2Row][0] <<" "<< data2[d2Row][1] << data3[d3Row][0] <<" "<< data3[d3Row][1] << endl;
-						//system("PAUSE");
 					}
 				}
 			}
